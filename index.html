@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sheep256</title>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&family=VT323&display=swap');
+
+        * {
+            margin: none;
+            padding: none;
+            font-family: VT323, monospace;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gridbox {
+            height: 25vh;
+            border: 2px solid black;
+            text-align: center;
+            flex-basis: calc(25% - 10px);
+            vertical-align: middle;
+            line-height: 25vh;
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="black gridbox"></div>
+    <div class="red gridbox"></div>
+    <div class="green gridbox"></div>
+    <div class="yellow gridbox"></div>
+    <div class="blue  gridbox"></div>
+    <div class="purple gridbox"></div>
+    <div class="cyan gridbox"></div>
+    <div class="white gridbox"></div>
+    <div class="9 gridbox"></div>
+    <div class="10 gridbox"></div>
+    <div class="11 gridbox"></div>
+    <div class="12 gridbox"></div>
+    <div class="13 gridbox"></div>
+    <div class="14 gridbox"></div>
+    <div class="15 gridbox"></div>
+    <div class="16 gridbox"></div>
+
+
+    <script>
+        const colors = {
+            "background": "#341D1D",
+            "black": "#252525",
+            "blue": "#EAB5F2",
+            "brightBlack": "#828282",
+            "brightBlue": "#2AA8EE",
+            "brightCyan": "#EAEAFB",
+            "brightGreen": "#E5D392",
+            "brightPurple": "#B772B9",
+            "brightRed": "#FA5A5A",
+            "brightWhite": "#F0F0F0",
+            "brightYellow": "#8BFFBB",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#EAEAFB",
+            "foreground": "#F0F0F0",
+            "green": "#BEAB59",
+            "name": "sheep256",
+            "purple": "#0C4F6B",
+            "red": "#ff2424",
+            "selectionBackground": "#94FAF3",
+            "white": "#d9d9d9",
+            "yellow": "#6CF563"
+        }
+
+        for (const [key, value] of Object.entries(colors)) {
+            document.getElementsByClassName(key)[0].style.backgroundColor = value;
+            document.getElementsByClassName(key)[0].textContent = key;
+        }
+
+
+    </script>
+</body>
+
+</html>
